@@ -53,7 +53,7 @@ jobs:
           name: Run Apex Tests
           command: |
             mkdir -p ~/junit
-            sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5
+            sfdx force:apex:test:run -s demo -c -d ~/junit -r junit --wait 5
       - store_test_results:
           path: ~/junit
       - run:
